@@ -1,4 +1,4 @@
-name: Continuous Delivery
+name: Deploy
 on:
   push:
     paths:
