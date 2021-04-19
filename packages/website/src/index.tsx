@@ -4,5 +4,6 @@ import reportWebVitals from './reportWebVitals'
 import './index.less'
 
 const rootElement = window.document.getElementById('root')
+
 render(<App />, rootElement)
 reportWebVitals()
