@@ -1,0 +1,20 @@
+repositories:
+  - name: bndigital
+    url: https://dcr.bndigital.dev/chartrepo/library
+
+helmDefaults:
+  kubeContext: do-fra1-bndigital
+  createNamespace: true
+  cleanupOnFail: true
+
+releases:
+  - name: clarity-website
+    namespace: staging
+    chart: bndigital/nodejs
+    values:
+      - image: dcr.bndigital.dev/clarity/website:latest
+        imagePullSecrets: [ container-registry ]
+        ingress:
+          enabled: true
+          tls: true
+          host: clarity.bndigital.dev

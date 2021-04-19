@@ -1,0 +1,12 @@
+.*ignore
+.DS_Store
+.cache
+.env*
+.eslintcache
+.git*
+bin
+build
+node_modules
+*.iml
+Pulumi.yaml
+Dockerfile

@@ -1,0 +1,31 @@
+name: Continuous Delivery
+on:
+  push:
+    paths:
+      - .github/workflows/continuous-delivery.yml
+      - packages/website/src/**/*
+    branches:
+      - latest
+jobs:
+  lint:
+    name: Lint sources
+    runs-on: self-hosted
+    steps:
+      - name: Checkout sources
+        uses: actions/checkout@v2
+      - name: Install dependencies
+        run: yarn
+      - name: Lint sources
+        run: yarn lint
+
+  analyze:
+    name: SonarQube scanner
+    runs-on: self-hosted
+    steps:
+      - name: Checkout sources
+        uses: actions/checkout@v2
+      - name: SonarQube Scan
+        uses: kitabisa/sonarqube-action@master
+        with:
+          host: ${{ secrets.SONARQUBE_HOST }}
+          login: ${{ secrets.SONARQUBE_TOKEN }}

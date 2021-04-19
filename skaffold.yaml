@@ -4,10 +4,6 @@ metadata:
   name: nymcard
 build:
   artifacts:
-  - image: cms
-    context: .
-    docker:
-      dockerfile: packages/cms/Dockerfile
   - image: website
     context: .
     docker:
