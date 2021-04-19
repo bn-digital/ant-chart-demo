@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_markdowns",
+  "info": {
+    "name": "Markdown",
+    "icon": "code",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "richtext"
+    },
+    "properties": {
+      "type": "json"
+    }
+  }
+}

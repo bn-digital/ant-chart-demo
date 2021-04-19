@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_form_requests",
+  "info": {
+    "name": "ContactFormRequest",
+    "description": ""
+  },
+  "options": {
+    "populateCreatorFields": false,
+    "increments": false,
+    "timestamps": false,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "email": {
+      "type": "email",
+      "required": true,
+      "unique": false
+    },
+    "subject": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "message": {
+      "type": "text"
+    }
+  }
+}
