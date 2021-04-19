@@ -1,0 +1,110 @@
+[
+  {
+    "security": "AMZN",
+    "rp": 2.48,
+    "netYield": 2.56,
+    "divGrth": 0.21
+  },
+  {
+    "security": "BAC",
+    "rp": 1.55,
+    "netYield": 1.89,
+    "divGrth": 1.60
+  },
+  {
+    "security": "CDNS",
+    "rp": 0.92,
+    "netYield": 1.67,
+    "divGrth": 2.33
+  },
+  {
+    "security": "MSFT",
+    "rp": 2.11,
+    "netYield": 2.54,
+    "divGrth": 6.43
+  },
+  {
+    "security": "MSI",
+    "rp": 1.56,
+    "netYield": 3.60,
+    "divGrth": 1.92
+  },
+  {
+    "security": "NFLX",
+    "rp": 2.49,
+    "netYield": 3.02,
+    "divGrth": 1.32
+  },
+  {
+    "security": "NVDA",
+    "rp": 1.88,
+    "netYield": 2.91,
+    "divGrth": 3.23
+  },
+  {
+    "security": "ORCL",
+    "rp": 1.67,
+    "netYield": 3.44,
+    "divGrth": 3.89
+  },
+  {
+    "security": "ORLY",
+    "rp": 1.21,
+    "netYield": 4.56,
+    "divGrth": 8.72
+  },
+  {
+    "security": "PPG",
+    "rp": 0.99,
+    "netYield": 1.88,
+    "divGrth": 5.93
+  },
+  {
+    "security": "PVH",
+    "rp": 0.78,
+    "netYield": 3.03,
+    "divGrth": 4.23
+  },
+  {
+    "security": "PYPL",
+    "rp": 1.00,
+    "netYield": 1.23,
+    "divGrth": 7.65
+  },
+  {
+    "security": "RCL",
+    "rp": 3.42,
+    "netYield": 3.51,
+    "divGrth": 8.32
+  },
+  {
+    "security": "SBUX",
+    "rp": 2.00,
+    "netYield": 4.23,
+    "divGrth": 8.10
+  },
+  {
+    "security": "SO",
+    "rp": 4.33,
+    "netYield": 4.67,
+    "divGrth": 1.32
+  },
+  {
+    "security": "TEL",
+    "rp": 1.10,
+    "netYield": 4.01,
+    "divGrth": 6.01
+  },
+  {
+    "security": "TFC",
+    "rp": 1.23,
+    "netYield": 5.80,
+    "divGrth": 6.80
+  },
+  {
+    "security": "TXN",
+    "rp": 2.34,
+    "netYield": 6.01,
+    "divGrth": 3.80
+  }
+]
