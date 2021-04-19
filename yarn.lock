@@ -78,6 +78,234 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@antv/adjust@npm:^0.2.1":
+  version: 0.2.3
+  resolution: "@antv/adjust@npm:0.2.3"
+  dependencies:
+    "@antv/util": ~2.0.0
+    tslib: ^1.10.0
+  checksum: 2426fe1c2c06a087de73b6527f707673a31c8b6cc5d7f13d98988b5c3c38891fcfeff03631520d5dad83b48922708a07c1e4a8079d995b1b9c2a6d90656c85d7
+  languageName: node
+  linkType: hard
+
+"@antv/attr@npm:^0.3.1":
+  version: 0.3.2
+  resolution: "@antv/attr@npm:0.3.2"
+  dependencies:
+    "@antv/color-util": ^2.0.1
+    "@antv/util": ~2.0.0
+    tslib: ^1.10.0
+  checksum: b1447325ae30a2f24b8acb40019624279255845055c68ae544a6bb24afafa71ad25592b2b693e52415513195c0d5aeac08d35dff2bbc940bbacc9e37ef7c60e1
+  languageName: node
+  linkType: hard
+
+"@antv/color-util@npm:^2.0.1, @antv/color-util@npm:^2.0.2":
+  version: 2.0.6
+  resolution: "@antv/color-util@npm:2.0.6"
+  dependencies:
+    "@antv/util": ^2.0.9
+    tslib: ^2.0.3
+  checksum: b90169fccdaaeb46287d9cf7df3acadc11047099572158d4bec1c166ae919eb8180481c3456d21e12a0a5690aacdc60ed54b9e9b319e2c78cfa795a9c56fa1df
+  languageName: node
+  linkType: hard
+
+"@antv/component@npm:^0.8.7":
+  version: 0.8.11
+  resolution: "@antv/component@npm:0.8.11"
+  dependencies:
+    "@antv/dom-util": ~2.0.1
+    "@antv/g-base": 0.5.6
+    "@antv/matrix-util": ^3.1.0-beta.1
+    "@antv/path-util": ~2.0.7
+    "@antv/scale": ~0.3.1
+    "@antv/util": ~2.0.0
+    fecha: ~4.2.0
+    tslib: ^2.0.3
+  checksum: 364fd268e9e0a7b776cf132ae987e3a5211e7d3d9fa509bdc637a0f89360368bed8fcebf0ffa5d07896bb9a43972740a147f51ebd30c56b71132d2822e602457
+  languageName: node
+  linkType: hard
+
+"@antv/coord@npm:^0.3.0":
+  version: 0.3.1
+  resolution: "@antv/coord@npm:0.3.1"
+  dependencies:
+    "@antv/matrix-util": ^3.1.0-beta.2
+    "@antv/util": ~2.0.12
+    tslib: ^2.1.0
+  checksum: 60e83a7147b81295f76ef7e549244b6a8c1f2bc97ea95fd414eef23269e21e084f1904af5f900a0877c0b3f617eb66e02695ffdad45762b4f4d4293e32555994
+  languageName: node
+  linkType: hard
+
+"@antv/dom-util@npm:^2.0.2, @antv/dom-util@npm:~2.0.1":
+  version: 2.0.3
+  resolution: "@antv/dom-util@npm:2.0.3"
+  dependencies:
+    tslib: ^2.0.3
+  checksum: 0ad03865c783b57e8da0abded5bcb7b6d22ded709dc19a1debf5f4bb618fb1fbdb27ba7b1a3dec3e7be449ebe80f3818564c4a875aed0943c3d885adf819d73c
+  languageName: node
+  linkType: hard
+
+"@antv/event-emitter@npm:^0.1.1, @antv/event-emitter@npm:^0.1.2, @antv/event-emitter@npm:~0.1.0":
+  version: 0.1.2
+  resolution: "@antv/event-emitter@npm:0.1.2"
+  checksum: a90ecc00be4da2404f3a617f72011967ab315046fd13f9d15132432cf36a5d258a8dcfb6b8f593f5bd0733863e335ed1c912b4ce87ad1c245fbc0140f28d1eba
+  languageName: node
+  linkType: hard
+
+"@antv/g-base@npm:0.5.6":
+  version: 0.5.6
+  resolution: "@antv/g-base@npm:0.5.6"
+  dependencies:
+    "@antv/event-emitter": ^0.1.1
+    "@antv/g-math": ^0.1.6
+    "@antv/matrix-util": ^3.1.0-beta.1
+    "@antv/path-util": ~2.0.5
+    "@antv/util": ~2.0.0
+    "@types/d3-timer": ^2.0.0
+    d3-ease: ^1.0.5
+    d3-interpolate: ^1.3.2
+    d3-timer: ^1.0.9
+    detect-browser: ^5.1.0
+    tslib: ^2.0.3
+  checksum: 4801f2b6318cc2acef71dd9aef57d46c8de68fba0596b7eb8d9c312ee72bc5897c151ffcc48fbfec28a44dcdaf4190623228514657ca2b2c322d7012649a2857
+  languageName: node
+  linkType: hard
+
+"@antv/g-base@npm:^0.5.3":
+  version: 0.5.8
+  resolution: "@antv/g-base@npm:0.5.8"
+  dependencies:
+    "@antv/event-emitter": ^0.1.1
+    "@antv/g-math": ^0.1.6
+    "@antv/matrix-util": ^3.1.0-beta.1
+    "@antv/path-util": ~2.0.5
+    "@antv/util": ~2.0.0
+    "@types/d3-timer": ^2.0.0
+    d3-ease: ^1.0.5
+    d3-interpolate: ^1.3.2
+    d3-timer: ^1.0.9
+    detect-browser: ^5.1.0
+    tslib: ^2.0.3
+  checksum: 2adcdf3f9ad292c111ad7faad5c81506c6490fb941bf92de65dd23daeea087efe4854784b258b27fd0ec23cc76908884eb175ed89d759ec2f0d7329525c64970
+  languageName: node
+  linkType: hard
+
+"@antv/g-canvas@npm:0.5.6":
+  version: 0.5.6
+  resolution: "@antv/g-canvas@npm:0.5.6"
+  dependencies:
+    "@antv/g-base": ^0.5.3
+    "@antv/g-math": ^0.1.6
+    "@antv/matrix-util": ^3.1.0-beta.1
+    "@antv/path-util": ~2.0.5
+    "@antv/util": ~2.0.0
+    gl-matrix: ^3.0.0
+    tslib: ^2.0.3
+  checksum: 92cfeb1fce072507ab933391479d65959e29cf414537b33f37b09306fa768a50a232817d3db2436fcfd60047ee71c35b776617b3928bed348a6cee9c10bcfeab
+  languageName: node
+  linkType: hard
+
+"@antv/g-math@npm:^0.1.6":
+  version: 0.1.7
+  resolution: "@antv/g-math@npm:0.1.7"
+  dependencies:
+    "@antv/util": ~2.0.0
+    gl-matrix: ^3.0.0
+  checksum: 03bc03f924bc52734376d1877f4deb80eb3750f0e2561f1389fed01b74042592fd3d5d4fed0675fa221049d332d2cc6697643bf92cbe137d485904c9bd29eb34
+  languageName: node
+  linkType: hard
+
+"@antv/g-svg@npm:0.5.6":
+  version: 0.5.6
+  resolution: "@antv/g-svg@npm:0.5.6"
+  dependencies:
+    "@antv/g-base": ^0.5.3
+    "@antv/g-math": ^0.1.6
+    "@antv/util": ~2.0.0
+    detect-browser: ^5.0.0
+    tslib: ^2.0.3
+  checksum: 7e3c1cbe8a3e48cda09a6cb6b6574def4e08bde3fdcc06157f196e65c6dd06b9390b986fbc157a7a6216ffab2dab939de622144f3ad7ef40d9f8ead76b08a64a
+  languageName: node
+  linkType: hard
+
+"@antv/g2@npm:^4.1.0, @antv/g2@npm:^4.1.14":
+  version: 4.1.14
+  resolution: "@antv/g2@npm:4.1.14"
+  dependencies:
+    "@antv/adjust": ^0.2.1
+    "@antv/attr": ^0.3.1
+    "@antv/color-util": ^2.0.2
+    "@antv/component": ^0.8.7
+    "@antv/coord": ^0.3.0
+    "@antv/dom-util": ^2.0.2
+    "@antv/event-emitter": ~0.1.0
+    "@antv/g-base": 0.5.6
+    "@antv/g-canvas": 0.5.6
+    "@antv/g-svg": 0.5.6
+    "@antv/matrix-util": ^3.1.0-beta.1
+    "@antv/path-util": ^2.0.3
+    "@antv/scale": ^0.3.7
+    "@antv/util": ~2.0.5
+    tslib: ^2.0.0
+  checksum: 8e8c9ed419abd76da19561622180ad9634d82b1218f51e9aa17601e52386c9072403fbc3a1bdb178e89859ae4482a4ce030ff8247e818ceb573855fb09d4b5ba
+  languageName: node
+  linkType: hard
+
+"@antv/g2plot@npm:^2.3.18":
+  version: 2.3.18
+  resolution: "@antv/g2plot@npm:2.3.18"
+  dependencies:
+    "@antv/event-emitter": ^0.1.2
+    "@antv/g2": ^4.1.0
+    d3-hierarchy: ^2.0.0
+    d3-regression: ^1.3.5
+    size-sensor: ^1.0.1
+    tslib: ^2.0.3
+  checksum: e546612725dda4631cd2101ef9c3459eb86dac0aaef76ece8a5c0ebb03f3eecd737b49eff318ef04c1c7297f25b6193377d8a4abfc0a44bdc6bc8874c1a6a951
+  languageName: node
+  linkType: hard
+
+"@antv/matrix-util@npm:^3.1.0-beta.1, @antv/matrix-util@npm:^3.1.0-beta.2":
+  version: 3.1.0-beta.2
+  resolution: "@antv/matrix-util@npm:3.1.0-beta.2"
+  dependencies:
+    "@antv/util": ^2.0.9
+    gl-matrix: ^3.3.0
+    tslib: ^1.10.0
+  checksum: 346134c9173131e1e8556d30cc9a3ec474b7d8782aa814f6eb6408ea0fb407244922e42421696b4d6e19fade3edf80068c517ec568fd2b26e6f0957fcc62fbf8
+  languageName: node
+  linkType: hard
+
+"@antv/path-util@npm:^2.0.3, @antv/path-util@npm:~2.0.5, @antv/path-util@npm:~2.0.7":
+  version: 2.0.9
+  resolution: "@antv/path-util@npm:2.0.9"
+  dependencies:
+    "@antv/util": ^2.0.9
+    tslib: ^2.0.3
+  checksum: 5cb6b4a3b8a089d1ba96374026ed90385fd206fbf08efd78587ac626b2ae090961454d27928f839e1f12f20fb2aae125b899194f52a1bd908e0c1d58d9986235
+  languageName: node
+  linkType: hard
+
+"@antv/scale@npm:^0.3.7, @antv/scale@npm:~0.3.1":
+  version: 0.3.9
+  resolution: "@antv/scale@npm:0.3.9"
+  dependencies:
+    "@antv/util": ~2.0.3
+    fecha: ~4.2.0
+    tslib: ^2.0.0
+  checksum: 41f817635dc33dcb1c8377bd2d8d671a9d38cce7ef75e252b0332e2b5938c03f42c808a2ed06a861558a35e32bd820fc3bcd19ef23e22e69f9199fd2111090b9
+  languageName: node
+  linkType: hard
+
+"@antv/util@npm:^2.0.9, @antv/util@npm:~2.0.0, @antv/util@npm:~2.0.12, @antv/util@npm:~2.0.3, @antv/util@npm:~2.0.5":
+  version: 2.0.13
+  resolution: "@antv/util@npm:2.0.13"
+  dependencies:
+    tslib: ^2.0.3
+  checksum: 88d119ce4268aae7ffbb19c437eaa94ab817e0c49560d127f1b407339f6da087e3cd8266bd2c658666efda7a8b3e875602889b91b55446473d75dbe303afd831
+  languageName: node
+  linkType: hard
+
 "@apollo/client@npm:^3.3.11":
   version: 3.3.11
   resolution: "@apollo/client@npm:3.3.11"
@@ -251,6 +479,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@app/website@workspace:packages/website"
   dependencies:
+    "@antv/g2": ^4.1.14
+    "@antv/g2plot": ^2.3.18
     "@apollo/client": ^3.3.11
     "@craco/craco": ^6.1.1
     "@types/node": ^14.14.34
@@ -5816,6 +6046,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/d3-timer@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@types/d3-timer@npm:2.0.0"
+  checksum: 00956fc6f416e096ee05f7e031bf5d9a21074bca5a987065df3c2284e4fd5b2fb154c0691edf08cc0664302f3387a5ec5e0e596807ea04cdcb9a3e9d9bf27de4
+  languageName: node
+  linkType: hard
+
 "@types/eslint@npm:^7.2.6":
   version: 7.2.7
   resolution: "@types/eslint@npm:7.2.7"
@@ -11324,6 +11561,50 @@ __metadata:
   languageName: node
   linkType: hard
 
+"d3-color@npm:1":
+  version: 1.4.1
+  resolution: "d3-color@npm:1.4.1"
+  checksum: a579fdc2f4ec50980e32d0ac5212c3023ee9c6a7555ae698278f05c9f7d06322f83dde01253f672f9f9fd05d8860f0256d25aee999a0d32cf4111d731413f5da
+  languageName: node
+  linkType: hard
+
+"d3-ease@npm:^1.0.5":
+  version: 1.0.7
+  resolution: "d3-ease@npm:1.0.7"
+  checksum: c35f083c586421cb49da5789ee13a250e8f34638484be4ed2b15f7079acd40b19dc858c0969d0004734847ec0dca8484ad1611726b8cb06587e28f7031d9160a
+  languageName: node
+  linkType: hard
+
+"d3-hierarchy@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "d3-hierarchy@npm:2.0.0"
+  checksum: 6fa4f8393444072c1466478e1baf1551857a6d6a797bbfb7b28bbe6322f288749ecdd6e1801b9c1978614c8a4664115aeda836dab8c8bd0829df75e6ac965f40
+  languageName: node
+  linkType: hard
+
+"d3-interpolate@npm:^1.3.2":
+  version: 1.4.0
+  resolution: "d3-interpolate@npm:1.4.0"
+  dependencies:
+    d3-color: 1
+  checksum: beea08fb3a712ccb992082c058a96a108f31692bbcecbf8029539ff378747b666fd0f33798b313835a2cb019e399a30fd1f5b643822f1cc0be3c86b4fe4730c7
+  languageName: node
+  linkType: hard
+
+"d3-regression@npm:^1.3.5":
+  version: 1.3.8
+  resolution: "d3-regression@npm:1.3.8"
+  checksum: 98f6a92b9d5763580b821da759a1495686fcf625557ea43f7fcd2a78259eff63b29e98d8fa2c7cb7b2db5dd14de607fd61814d3fe8db906d0b3a73900bc43b40
+  languageName: node
+  linkType: hard
+
+"d3-timer@npm:^1.0.9":
+  version: 1.0.10
+  resolution: "d3-timer@npm:1.0.10"
+  checksum: e302132e1fc8989a5693fc7d265a034d7634ec87a1a8ed85e5959715d9da413971d9289f0ef304c67397d2acb4ebebd99f5adf0c8819929b8f6c588a1fd01d36
+  languageName: node
+  linkType: hard
+
 "d@npm:1, d@npm:^1.0.1":
   version: 1.0.1
   resolution: "d@npm:1.0.1"
@@ -11779,6 +12060,13 @@ __metadata:
   dependencies:
     repeat-string: ^1.5.4
   checksum: 69b8834a48313830e71b43efe36b3654dc410d4ee419968a2a1ef018a949a636e7c1111eac2262ccce8dde0800410be92fd4fefbbdec199b595c907e7b1f7d8f
+  languageName: node
+  linkType: hard
+
+"detect-browser@npm:^5.0.0, detect-browser@npm:^5.1.0":
+  version: 5.2.0
+  resolution: "detect-browser@npm:5.2.0"
+  checksum: 8d25ed366c13c13d88f800152ce1b47ee6eb0ce52e6c55380593bec5e112a1dbd65c1c0c2e42737d379e1ab3fce7fc6a4cf38431d7233884e1dca0c1bc6348c6
   languageName: node
   linkType: hard
 
@@ -13624,6 +13912,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"fecha@npm:~4.2.0":
+  version: 4.2.1
+  resolution: "fecha@npm:4.2.1"
+  checksum: 17e08368e29422fa46df0ec9a3c6b471e7de37552fba1450313baafd10a92ac0dcfa788d3258d91da86e70306ab05edf10068d3c6a42a22d1348ce5d87095a39
+  languageName: node
+  linkType: hard
+
 "figgy-pudding@npm:^3.5.1":
   version: 3.5.2
   resolution: "figgy-pudding@npm:3.5.2"
@@ -14472,6 +14767,13 @@ fsevents@~2.1.2:
   dependencies:
     emoji-regex: ">=6.0.0 <=6.1.1"
   checksum: 1f5961777b75d2ce2df5ae8d16a1eba49145a9896c5808341ca4100894631a4182ab010dea260a8a22855ea89d383f61412507dd34977a67b3a641168af19e10
+  languageName: node
+  linkType: hard
+
+"gl-matrix@npm:^3.0.0, gl-matrix@npm:^3.3.0":
+  version: 3.3.0
+  resolution: "gl-matrix@npm:3.3.0"
+  checksum: d75bac9b6b40d6a97c8fd507e76129dae91d84685d5eaf622600ddc811f31fe89d917bb5ddbf8575ce19cf7a993a10bcd5db138ba9bdf2630cf53ec43dc7afa0
   languageName: node
   linkType: hard
 
@@ -27443,6 +27745,13 @@ resolve@1.18.1:
   version: 1.0.5
   resolution: "sisteransi@npm:1.0.5"
   checksum: 6554debe10fa4c6a7e8d58531313fdb61c39bb435ba420f8d7a01d8aaffecc654cca846b586e33f3c904350e24f229d5bbd8069abdb583c93252849a0f73e933
+  languageName: node
+  linkType: hard
+
+"size-sensor@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "size-sensor@npm:1.0.1"
+  checksum: d99febc95401b542caaba246861cbb0cdffc4ac5a93608340c99336d653fa558d9dd6bb181c6e414c61f6913ff4cb936a4a9b4c69160e108507fdf742c72414e
   languageName: node
   linkType: hard
 
