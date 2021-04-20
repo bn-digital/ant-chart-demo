@@ -28,7 +28,8 @@ const Home: FC = () => {
     if (!plotRef.current) {
       if (data) {
         const options: ScatterOptions = {
-          appendPadding: [48,24],height: 680,
+          appendPadding: [48, 24],
+          height: 680,
           data,
           xField: 'divGrth',
           yField: 'netYield',
@@ -103,7 +104,7 @@ const Home: FC = () => {
         <Col style={{ height: 750 }} span={16}>
           <DemoChart data={data} chartTemplate={plotRef.current} />
         </Col>
-        <Col style={{height: 750}} span={8}>
+        <Col style={{ height: 750 }} span={8}>
           <LegendTable data={data} setData={setData} />
         </Col>
       </Row>
@@ -111,4 +112,4 @@ const Home: FC = () => {
   )
 }
 
-export { Home };
+export { Home }

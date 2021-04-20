@@ -1,7 +1,7 @@
 import { Dispatch, FC, SetStateAction } from 'react'
 import { IDividend } from '../../interfaces'
 import { Table, Typography } from 'antd'
-import { ColumnProps } from "antd/lib/table";
+import { ColumnProps } from 'antd/lib/table'
 
 type LegendTableProps = {
   data: IDividend[]

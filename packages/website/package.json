@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "build": "craco build",
+    "lint": "eslint src && stylelint src",
     "start": "craco start"
   },
   "dependencies": {

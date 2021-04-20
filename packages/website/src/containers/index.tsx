@@ -1,4 +1,4 @@
-import  { Suspense, FC } from 'react'
+import { Suspense, FC } from 'react'
 import { Row, Spin } from 'antd'
 import { BrowserRouter as Router } from 'react-router-dom'
 import { UI } from './UI'
@@ -20,4 +20,4 @@ const App: FC = ({ children }) => (
   </Router>
 )
 
-export { App };
+export { App }

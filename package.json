@@ -13,11 +13,12 @@
     "@graphql-codegen/typescript-operations": "^1.17.16",
     "@graphql-codegen/typescript-react-apollo": "^2.2.4",
     "concurrently": "^6.0.2",
-    "graphql": "^15.5.0"
+    "graphql": "^15.5.0",
+    "prettier": "^2.2.1"
   },
   "scripts": {
     "fix": "prettier --write packages/*/src && eslint --fix packages/*/src --no-ignore && stylelint --fix packages/*/src",
-    "lint": "prettier --check packages/*/src && eslint packages/*/src && stylelint packages/*/src",
+    "lint": "prettier --check packages/*/src && yarn workspace @clarity/website run lint",
     "cms": "yarn workspace @clarity/cms run start",
     "website": "yarn workspace @clarity/website run start",
     "start": "concurrently 'yarn:cms' 'yarn:website'",

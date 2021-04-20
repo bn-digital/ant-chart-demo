@@ -51,4 +51,4 @@ const InnerRouter: FC = ({ children }) => (
   </Routes>
 )
 const Routing = withRoutes(InnerRouter)
-export { Routing, withNavigation };
+export { Routing, withNavigation }
