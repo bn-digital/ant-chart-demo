@@ -1,10 +1,10 @@
 import { Dispatch, FC, SetStateAction } from 'react'
-import React from 'react'
 import { IDividend } from '../../interfaces'
 import { Table, Typography } from 'antd'
+import { ColumnProps } from "antd/lib/table";
 
 type LegendTableProps = {
-  data: IDividend[] | []
+  data: IDividend[]
   setData: Dispatch<SetStateAction<IDividend[]>>
 }
 
@@ -13,30 +13,26 @@ type TextProps = {
   underline?: boolean
 }
 
-const HeadText: FC<TextProps> = ({ text }) => {
-  return (
-    <Typography.Title level={4} style={{ textTransform: 'uppercase', fontSize: '11px', fontWeight: 700 }}>
-      {text}
-    </Typography.Title>
-  )
-}
-const CellText: FC<TextProps> = ({ text, underline = false }) => {
-  return (
-    <Typography.Text
-      style={{
-        textTransform: 'uppercase',
-        textDecoration: underline ? 'underline' : 'unset',
-        fontSize: '12px',
-        fontWeight: 600,
-      }}
-    >
-      {text}
-    </Typography.Text>
-  )
-}
+const HeadText: FC<TextProps> = ({ text }) => (
+  <Typography.Title level={4} style={{ textTransform: 'uppercase', fontSize: 11, fontWeight: 700 }}>
+    {text}
+  </Typography.Title>
+)
+const CellText: FC<TextProps> = ({ text, underline = false }) => (
+  <Typography.Text
+    style={{
+      textTransform: 'uppercase',
+      textDecoration: underline ? 'underline' : 'unset',
+      fontSize: 12,
+      fontWeight: 600,
+    }}
+  >
+    {text}
+  </Typography.Text>
+)
 
-export const LegendTable: FC<LegendTableProps> = ({ data, setData }) => {
-  const columns = [
+export const LegendTable: FC<Partial<LegendTableProps>> = ({ data, setData }) => {
+  const columns: ColumnProps<IDividend>[] = [
     {
       title: <HeadText text={'Security'} />,
       dataIndex: 'security',
@@ -106,18 +102,18 @@ export const LegendTable: FC<LegendTableProps> = ({ data, setData }) => {
       onRow={record => ({
         onMouseEnter: () => {
           const currentRow = record.security
-          const updatedArr = data.map((item: IDividend) => {
+          const updatedArr = data?.map((item: IDividend) => {
             return item.security === currentRow
               ? { ...item, isActive: !item.isActive }
               : { ...item, isActive: false, isGrayed: true }
           })
-          setData(updatedArr)
+          setData && updatedArr && setData(updatedArr)
         },
         onMouseLeave: () => {
-          const updatedArr = data.map((item: IDividend) => {
+          const updatedArr = data?.map((item: IDividend) => {
             return { ...item, isActive: false, isGrayed: false }
           })
-          setData(updatedArr)
+          setData && updatedArr && setData(updatedArr)
         },
       })}
     />

@@ -1,5 +1,5 @@
 {
-  "name": "@app/cms",
+  "name": "@clarity/cms",
   "description": "A Strapi application",
   "private": true,
   "license": "MIT",
@@ -13,8 +13,8 @@
     "start": "strapi develop"
   },
   "dependencies": {
-    "knex": "^0.95.2",
-    "pg": "^8.5.1",
+    "knex": "^0.95.4",
+    "pg": "^8.6.0",
     "strapi": "^3.5.3",
     "strapi-admin": "^3.5.3",
     "strapi-connector-bookshelf": "^3.5.3",
@@ -29,13 +29,7 @@
     "strapi-utils": "^3.5.3"
   },
   "devDependencies": {
-    "concurrently": "^6.0.0",
-    "dotenv": "^8.2.0",
     "graphql-faker": "^2.0.0-rc.23",
-    "mongodb-memory-server": "^7.0.0-beta.30",
-    "nodemon": "^2.0.7",
-    "sqlite3": "^5.0.2",
-    "ts-node": "^9.1.1",
-    "typescript": "^4.2.3"
+    "sqlite3": "^5.0.2"
   }
 }

@@ -5,7 +5,6 @@ import { Menu, MenuProps } from 'antd'
 import { RoutesProps } from 'react-router'
 
 const Home = lazy(() => import('./../pages/home'))
-const ContactUs = lazy(() => import('../pages/contact-us'))
 
 type RouteNavigationMap = {
   [key: string]: { component: FC; name: string }
@@ -15,10 +14,6 @@ const routeMap: RouteNavigationMap = {
   '/': {
     component: Home,
     name: 'Home',
-  },
-  '/contact-us': {
-    component: ContactUs,
-    name: 'Contact Us',
   },
 }
 
@@ -56,4 +51,4 @@ const InnerRouter: FC = ({ children }) => (
   </Routes>
 )
 const Routing = withRoutes(InnerRouter)
-export { Routing, withNavigation }
+export { Routing, withNavigation };

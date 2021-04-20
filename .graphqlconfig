@@ -8,9 +8,6 @@
     "endpoints": {
       "development": {
         "url": "http://localhost:1337/graphql"
-      },
-      "staging": {
-        "url": "https://london-luxury.bndigital.dev/graphql"
       }
     }
   }

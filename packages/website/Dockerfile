@@ -11,7 +11,6 @@ RUN yarn set version berry \
 
 FROM base AS build
 RUN yarn
-ENV REACT_APP_API_URL=https://cms.london-luxury.bndigital.dev/graphql
 COPY . .
 RUN yarn build
 
