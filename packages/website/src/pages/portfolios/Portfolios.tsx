@@ -6,7 +6,7 @@ import { DemoChart } from '../../components/chart/Chart'
 import { LegendTable } from '../../components/legend/LegendTable'
 import { Scale } from '@antv/g2'
 
-const Home: FC = () => {
+const Portfolios: FC = () => {
   const [data, setData] = useState<IDividend[]>([])
   const plotRef = useRef<Scatter | null>(null)
 
@@ -112,4 +112,4 @@ const Home: FC = () => {
   )
 }
 
-export { Home }
+export { Portfolios }
