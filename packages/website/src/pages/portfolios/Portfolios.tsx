@@ -28,8 +28,7 @@ const Portfolios: FC = () => {
     if (!plotRef.current) {
       if (data) {
         const options: ScatterOptions = {
-          appendPadding: [48, 24],
-          height: 680,
+          appendPadding: 24,
           data,
           xField: 'divGrth',
           yField: 'netYield',
@@ -76,7 +75,7 @@ const Portfolios: FC = () => {
               content: 'Div Grth (%)',
               position: data => {
                 const { max } = data as Record<string, Scale>
-                return [+max - 0.5, -1]
+                return [+max - 0.5, -0.5]
               },
             },
             {
@@ -101,10 +100,10 @@ const Portfolios: FC = () => {
         Demo chart
       </Typography.Title>
       <Row wrap={false} justify={'space-between'} gutter={24}>
-        <Col style={{ height: 750 }} span={16}>
+        <Col span={17}>
           <DemoChart data={data} chartTemplate={plotRef.current} />
         </Col>
-        <Col style={{ height: 750 }} span={8}>
+        <Col span={7}>
           <LegendTable data={data} setData={setData} />
         </Col>
       </Row>

@@ -83,5 +83,13 @@ export const DemoChart: FC<Partial<ChartProps>> = ({ chartTemplate, data = [] })
     }
   }, [data, chartTemplate])
 
-  return <div id='container' ref={container} style={{ border: '1px solid #F0F1F3' }} />
+  return (
+    <div style={{ height: '100%', padding: '16px', backgroundColor: '#ffffff' }}>
+      <div
+        id='container'
+        ref={container}
+        style={{ height: '100%', backgroundColor: '#FAFBFD', border: '1px solid #F0F1F3' }}
+      />
+    </div>
+  )
 }
