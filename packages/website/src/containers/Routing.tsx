@@ -1,7 +1,7 @@
 import { FC, lazy, ReactNode } from 'react'
 import { NavLink, Route, Routes, useLocation } from 'react-router-dom'
 import { DefaultLayout } from '../components/layout/DefaultLayout'
-import { Menu, MenuProps } from 'antd'
+import { Avatar, Col, Menu, MenuProps, Row, Typography } from 'antd'
 import { RoutesProps } from 'react-router'
 import { Icon } from '../components/icon/Icon'
 import { ReactComponent as DashboardIcon } from '../components/icon/icons/dashboard-icon.svg'
@@ -21,22 +21,22 @@ const routeMap: RouteNavigationMap = {
   '/': {
     component: Portfolios,
     name: 'Dashboard',
-    icon: <Icon svg={DashboardIcon} wrapperSize={40} size={32} />,
+    icon: <Icon svg={DashboardIcon} wrapperSize={32} size={32} />,
   },
   '/portfolios': {
     component: Portfolios,
     name: 'Portfolios',
-    icon: <Icon svg={PortfoliosIcon} wrapperSize={40} size={32} />,
+    icon: <Icon svg={PortfoliosIcon} wrapperSize={32} size={32} />,
   },
   '/funds': {
     component: Funds,
     name: 'Funds',
-    icon: <Icon svg={FundsIcon} wrapperSize={40} size={32} />,
+    icon: <Icon svg={FundsIcon} wrapperSize={32} size={32} />,
   },
   '/reports': {
     component: Reports,
     name: 'Reports',
-    icon: <Icon svg={ReportsIcon} wrapperSize={40} size={32} />,
+    icon: <Icon svg={ReportsIcon} wrapperSize={32} size={32} />,
   },
 }
 
@@ -48,9 +48,15 @@ type AsideLinkProps = {
 
 const AsideLink: FC<Partial<AsideLinkProps>> = ({ name, icon }) => {
   return (
-    <NavLink to={'/'} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-      {icon}
-      {name}
+    <NavLink to={'/'}>
+      <Row justify={'center'}>
+        <Col span={24} style={{ display: 'flex', justifyContent: 'center' }}>
+          <Avatar size={32} icon={icon} shape={'square'} />
+        </Col>
+        <Col span={24} style={{ textAlign: 'center' }}>
+          <Typography.Text type={'secondary'}>{name}</Typography.Text>
+        </Col>
+      </Row>
     </NavLink>
   )
 }
@@ -61,7 +67,7 @@ function withNavigation(Wrapped: FC<MenuProps>): FC<MenuProps> {
     return (
       <Wrapped {...props} defaultSelectedKeys={[pathname ?? '/']}>
         {Object.entries(routeMap).map(([path, { name, icon }]) => (
-          <Menu.Item key={path}>
+          <Menu.Item key={path} style={{ marginBottom: 22 }}>
             <AsideLink name={name} icon={icon} />
           </Menu.Item>
         ))}

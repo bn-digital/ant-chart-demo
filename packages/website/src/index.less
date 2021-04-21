@@ -18,6 +18,10 @@ h6 {
   padding: 6px 16px;
 }
 
+.app-menu-vertical > .app-menu-item {
+  line-height: initial;
+}
+
 .analysis-container {
   display: flex;
   flex: 1 1;
@@ -35,8 +39,31 @@ h6 {
 
 .app-menu-vertical .app-menu-item {
   height: auto;
+  .app-avatar {
+    color: @text-color-secondary;
+    background-color: transparent;
+  }
+
+  &:hover {
+    color: @primary-color;
+  }
+  &-selected {
+    .app-typography {
+      color: @primary-color;
+    }
+    .app-avatar {
+      color: @primary-color;
+      background-color: @primary-1;
+    }
+  }
 }
 
 .app-menu-item .anticon {
   margin-right: 0;
+}
+
+.app-menu:not(.app-menu-horizontal) .app-menu-item-selected,
+.app-menu-item a::before,
+.app-menu-item-active {
+  background-color: unset !important;
 }
