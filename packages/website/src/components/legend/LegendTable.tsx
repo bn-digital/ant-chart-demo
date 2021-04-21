@@ -2,7 +2,7 @@ import { Dispatch, FC, ReactNode, SetStateAction } from 'react'
 import { IDividend } from '../../interfaces'
 import { Table, Typography } from 'antd'
 import { ColumnProps } from 'antd/lib/table'
-import { Icon } from '../../components/icon/Icon'
+import { Icon } from "../icon/Icon"
 import { ReactComponent as SortingArrow } from '../../components/icon/icons/arrow.svg'
 import './LegendTable.less'
 

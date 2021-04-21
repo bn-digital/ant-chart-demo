@@ -1,10 +1,16 @@
 # syntax = docker/dockerfile:latest
 FROM node:15-alpine AS base
 WORKDIR /usr/local/src
+COPY package.json .
+RUN yarn set version berry \
+ && yarn config set nodeLinker node-modules \
+ && yarn config set preferAggregateCacheInfo true
+COPY --from=dcr.bndigital.dev/library/actions-runner:latest /home/runner/.yarn/berry/cache .yarn/cache
 
-FROM dcr.bndigital.dev/library/actions-runner:latest AS build
+FROM base AS build
+RUN yarn install \
+      --check-cache
 COPY . .
-RUN yarn
 RUN yarn build
 
 FROM base
