@@ -1,5 +1,5 @@
 import Wrapped from '@ant-design/icons'
-import { Dispatch, FC, SyntheticEvent } from 'react'
+import { CSSProperties, Dispatch, FC, SyntheticEvent } from 'react'
 
 export type IconProps = {
   svg: FC
@@ -7,12 +7,13 @@ export type IconProps = {
   wrapperSize: number
   className: string
   onClick: Dispatch<SyntheticEvent>
+  style: CSSProperties
 }
 
-export const Icon: FC<Partial<IconProps>> = ({ className, wrapperSize = 24, svg, onClick, size = 24 }) => {
+export const Icon: FC<Partial<IconProps>> = ({ className, wrapperSize = 24, svg, onClick, size = 24, style }) => {
   return (
     <Wrapped
-      style={{ fontSize: size }}
+      style={{ ...style, fontSize: size }}
       width={wrapperSize}
       height={wrapperSize}
       className={className}

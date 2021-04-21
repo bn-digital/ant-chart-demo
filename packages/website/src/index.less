@@ -1,9 +1,25 @@
+@import './containers/UI.less';
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  font-family: @secondary-font-family;
+}
+
 .ant-table.ant-table-small tfoot > tr > th,
 .ant-table.ant-table-small tfoot > tr > td .ant-table.ant-table-small .ant-table-title,
 .ant-table.ant-table-small .ant-table-footer,
 .ant-table.ant-table-small .ant-table-thead > tr > th,
 .ant-table.ant-table-small .ant-table-tbody > tr > td {
   padding: 6px 16px;
+}
+
+.app-menu-vertical > .app-menu-item {
+  line-height: initial;
 }
 
 .analysis-container {
@@ -19,26 +35,35 @@
       height: 100%;
     }
   }
-
-  .analysis-table {
-    width: 25%;
-    margin-left: 24px;
-
-    .app-ant-table-tbody > tr > td,
-    .app-ant-table-thead > tr > th {
-      border-bottom: 2px solid #f0f0f0;
-    }
-  }
-
-  .analysis-table .app-table-column-sorter {
-    display: none;
-  }
 }
 
 .app-menu-vertical .app-menu-item {
   height: auto;
+  .app-avatar {
+    color: @text-color-secondary;
+    background-color: transparent;
+  }
+
+  &:hover {
+    color: @primary-color;
+  }
+  &-selected {
+    .app-typography {
+      color: @primary-color;
+    }
+    .app-avatar {
+      color: @primary-color;
+      background-color: @primary-1;
+    }
+  }
 }
 
 .app-menu-item .anticon {
   margin-right: 0;
+}
+
+.app-menu:not(.app-menu-horizontal) .app-menu-item-selected,
+.app-menu-item a::before,
+.app-menu-item-active {
+  background-color: unset !important;
 }
