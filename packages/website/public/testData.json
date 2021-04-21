@@ -1,4 +1,11 @@
 [
+
+  {
+    "security": "MSFT",
+    "rp": 2.11,
+    "netYield": 2.54,
+    "divGrth": 6.43
+  },
   {
     "security": "AMZN",
     "rp": 2.48,
@@ -18,12 +25,6 @@
     "divGrth": 2.33
   },
   {
-    "security": "MSFT",
-    "rp": 2.11,
-    "netYield": 2.54,
-    "divGrth": 6.43
-  },
-  {
     "security": "MSI",
     "rp": 1.56,
     "netYield": 3.60,
@@ -41,18 +42,7 @@
     "netYield": 2.91,
     "divGrth": 3.23
   },
-  {
-    "security": "ORCL",
-    "rp": 1.67,
-    "netYield": 3.44,
-    "divGrth": 3.89
-  },
-  {
-    "security": "ORLY",
-    "rp": 1.21,
-    "netYield": 4.56,
-    "divGrth": 8.72
-  },
+
   {
     "security": "PPG",
     "rp": 0.99,
@@ -70,6 +60,18 @@
     "rp": 1.00,
     "netYield": 1.23,
     "divGrth": 7.65
+  },
+  {
+    "security": "ORCL",
+    "rp": 1.67,
+    "netYield": 3.44,
+    "divGrth": 3.89
+  },
+  {
+    "security": "ORLY",
+    "rp": 1.21,
+    "netYield": 4.56,
+    "divGrth": 8.72
   },
   {
     "security": "RCL",

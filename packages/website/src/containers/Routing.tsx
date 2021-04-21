@@ -9,7 +9,6 @@ import { ReactComponent as PortfoliosIcon } from '../components/icon/icons/portf
 import { ReactComponent as FundsIcon } from '../components/icon/icons/funds-icon.svg'
 import { ReactComponent as ReportsIcon } from '../components/icon/icons/reports-icon.svg'
 
-const Dashboard = lazy(() => import('../pages/dashboard'))
 const Portfolios = lazy(() => import('../pages/portfolios'))
 const Funds = lazy(() => import('../pages/funds'))
 const Reports = lazy(() => import('../pages/reports'))
@@ -20,7 +19,7 @@ type RouteNavigationMap = {
 
 const routeMap: RouteNavigationMap = {
   '/': {
-    component: Dashboard,
+    component: Portfolios,
     name: 'Dashboard',
     icon: <Icon svg={DashboardIcon} wrapperSize={40} size={32} />,
   },
@@ -47,9 +46,9 @@ type AsideLinkProps = {
   icon: ReactNode
 }
 
-const AsideLink: FC<AsideLinkProps> = ({ path, name, icon }) => {
+const AsideLink: FC<Partial<AsideLinkProps>> = ({ name, icon }) => {
   return (
-    <NavLink to={path} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+    <NavLink to={'/'} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       {icon}
       {name}
     </NavLink>
@@ -63,7 +62,7 @@ function withNavigation(Wrapped: FC<MenuProps>): FC<MenuProps> {
       <Wrapped {...props} defaultSelectedKeys={[pathname ?? '/']}>
         {Object.entries(routeMap).map(([path, { name, icon }]) => (
           <Menu.Item key={path}>
-            <AsideLink path={path} name={name} icon={icon} />
+            <AsideLink name={name} icon={icon} />
           </Menu.Item>
         ))}
       </Wrapped>
