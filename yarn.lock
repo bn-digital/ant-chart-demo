@@ -2181,9 +2181,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@clarity/cms@workspace:packages/cms":
+"@ant-chart-demo/cms@workspace:packages/cms":
   version: 0.0.0-use.local
-  resolution: "@clarity/cms@workspace:packages/cms"
+  resolution: "@ant-chart-demo/cms@workspace:packages/cms"
   dependencies:
     graphql-faker: ^2.0.0-rc.23
     knex: ^0.95.4
@@ -2204,9 +2204,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@clarity/website@workspace:packages/website":
+"@ant-chart-demo/website@workspace:packages/website":
   version: 0.0.0-use.local
-  resolution: "@clarity/website@workspace:packages/website"
+  resolution: "@ant-chart-demo/website@workspace:packages/website"
   dependencies:
     "@antv/g2plot": ^2.3.13
     "@apollo/client": ^3.3.15
@@ -7711,9 +7711,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"clarity@workspace:.":
+"ant-chart-demo@workspace:.":
   version: 0.0.0-use.local
-  resolution: "clarity@workspace:."
+  resolution: "ant-chart-demo@workspace:."
   dependencies:
     "@graphql-codegen/cli": ^1.21.4
     "@graphql-codegen/typescript": ^1.22.0

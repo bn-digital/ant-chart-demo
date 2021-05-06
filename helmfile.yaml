@@ -8,13 +8,13 @@ helmDefaults:
   cleanupOnFail: true
 
 releases:
-  - name: clarity-website
+  - name: ant-chart-demo-website
     namespace: staging
     chart: bndigital/nodejs
     values:
-      - image: dcr.bndigital.dev/clarity/website:latest
+      - image: dcr.bndigital.dev/ant-chart-demo/website:latest
         imagePullSecrets: [ container-registry ]
         ingress:
           enabled: true
           tls: true
-          host: clarity.bndigital.dev
+          host: ant-chart-demo.bndigital.dev

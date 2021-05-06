@@ -1,5 +1,5 @@
 {
-  "name": "clarity",
+  "name": "ant-chart-demo",
   "description": "Includes all required tools and packages to bootstrap app development using NodeJS stack",
   "version": "1.0.0",
   "workspaces": {
@@ -18,9 +18,9 @@
   },
   "scripts": {
     "fix": "prettier --write packages/*/src && eslint --fix packages/*/src --no-ignore && stylelint --fix packages/*/src",
-    "lint": "prettier --check packages/*/src && yarn workspace @clarity/website run lint",
-    "cms": "yarn workspace @clarity/cms run start",
-    "website": "yarn workspace @clarity/website run start",
+    "lint": "prettier --check packages/*/src && yarn workspace @ant-chart-demo/website run lint",
+    "cms": "yarn workspace @ant-chart-demo/cms run start",
+    "website": "yarn workspace @ant-chart-demo/website run start",
     "start": "concurrently 'yarn:cms' 'yarn:website'",
     "graphql": "graphql-codegen"
   }

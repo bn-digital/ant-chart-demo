@@ -9,7 +9,7 @@ on:
 
 env:
   docker_buildkit: 1
-  docker_image: ${{ secrets.docker_registry }}/clarity/website
+  docker_image: ${{ secrets.docker_registry }}/ant-chart-demo/website
 
 jobs:
   build:
@@ -103,6 +103,6 @@ jobs:
           SLACK_ICON: https://cdn.bndigital.co/images/logo.png
           SLACK_MESSAGE: |
             Staging environment updated.
-            See latest builds on https://clarity.bndigital.dev. Code analysis report: https://sonarqube.bndigital.dev/dashboard?id=clarity
+            See latest builds on https://ant-chart-demo.bndigital.dev. Code analysis report: https://sonarqube.bndigital.dev/dashboard?id=ant-chart-demo
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
           SLACK_FOOTER: ''
